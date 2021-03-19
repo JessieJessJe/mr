@@ -101,7 +101,7 @@ getNewQuestion = () => {
         choice.innerText = currentQuestion['choice' + number];
         });
     
-    imageQuestion.src="./assets/q" + questionCounter + ".png";
+    imageQuestion.src="assets/q" + questionCounter + ".png";
     //availableQuesions.splice(questionIndex, 1); //bc question already used
     acceptingAnswers = true;
     };

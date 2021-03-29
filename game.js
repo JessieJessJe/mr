@@ -139,7 +139,7 @@ choices.forEach((choice) => {
     
             hintName = currentQuestion['hint' + number];
             imageQuestion.src="mr/assets/" + hintName + ".png";
-            
+            console.log(imageQuestion.src);
         }
 
     })

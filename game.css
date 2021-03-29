@@ -7,16 +7,22 @@
   display: flex;
   margin-left: 1rem;
   width: 100%;
+  min-width: 300px;
+  text-align: top;
+  
 }
 
 .image-question{
   display: flex;
   width: 90%;
+
+  object-fit: contain;
 }
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
     width: 100%;
+    max-width: 800px;
     font-size: 1.8rem;
     background-color: white;
   }

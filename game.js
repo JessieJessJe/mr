@@ -140,7 +140,7 @@ choices.forEach((choice) => {
             hintName = currentQuestion['hint' + number];
             console.log(hintName);
 
-            imageQuestion.src="mr/assets/" + hintName + ".png";
+            imageQuestion.src="assets/" + hintName + ".png";
             
         }
 
@@ -149,7 +149,7 @@ choices.forEach((choice) => {
     choice.addEventListener('mouseleave', (e) => {
         if (HINT.includes(questionCounter)){
             
-            imageQuestion.src="mr/assets/q" + questionCounter + ".png";
+            imageQuestion.src="assets/q" + questionCounter + ".png";
         
         }
     })

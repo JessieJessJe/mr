@@ -138,15 +138,17 @@ choices.forEach((choice) => {
             const number = selectedChoice.dataset['number'];
     
             hintName = currentQuestion['hint' + number];
+            console.log(hintName);
+
             imageQuestion.src="mr/assets/" + hintName + ".png";
-            console.log(imageQuestion.src);
+            
         }
 
     })
 
     choice.addEventListener('mouseleave', (e) => {
         if (HINT.includes(questionCounter)){
-            console.log(HINT.includes(questionCounter))
+            
             imageQuestion.src="mr/assets/q" + questionCounter + ".png";
         
         }

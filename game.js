@@ -62,7 +62,7 @@ let questions = [
         answer: 2,
     },
     {   id:7,
-        question: "Woo-hoo! Why we all love Miss Rheingold?",
+        question: "Why we all love Miss Rheingold?",
         choice1: "Her colored photograph",
         choice2: "Her family of origin",
         choice3: "Her social status",
@@ -138,7 +138,8 @@ choices.forEach((choice) => {
             const number = selectedChoice.dataset['number'];
     
             hintName = currentQuestion['hint' + number];
-            imageQuestion.src="assets/" + hintName + ".png";
+            imageQuestion.src="mr/assets/" + hintName + ".png";
+            
         }
 
     })
@@ -146,7 +147,7 @@ choices.forEach((choice) => {
     choice.addEventListener('mouseleave', (e) => {
         if (HINT.includes(questionCounter)){
             console.log(HINT.includes(questionCounter))
-            imageQuestion.src="assets/q" + questionCounter + ".png";
+            imageQuestion.src="mr/assets/q" + questionCounter + ".png";
         
         }
     })
